@@ -1,9 +1,9 @@
-
+const clickMole = document.getElementsByClassName("hole");
 const dead = document.getElementById("dead");
 const lost = document.getElementById("lost");
 let counterDead = 0;
 let counterLost = 0;
-for (holeIndex = 1; holeIndex < 10; holeIndex++) {
+for (holeIndex = 1; holeIndex < clickMole.length; holeIndex++) {
 	getHole = index => document.getElementById(`hole${index}`);// выбор дыры по index
 	let hole = getHole(holeIndex);
 	hole.addEventListener('click', function () {

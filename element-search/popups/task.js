@@ -12,6 +12,7 @@ for (let i = 0; i < closeModal.length; i++) {
 const showCloseModal = document.getElementsByClassName("show-success");
 for (let i = 0; i < showCloseModal.length; i++) {
 	showCloseModal[i].onclick = () => {
+		modalStart.classList.remove('modal_active');
 		showModalStart.classList.add('modal_active');
 	}
 }
